@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="/assets/css/custom-style.css" />
+</head>
+<body>
+  <header>
+    <h1>{{ page.title }}</h1>
+    <p><a href="/">← Back to Home</a></p>
+    <hr />
+  </header>
+
+  <main>
+    {% for post in site.posts %}
+      <article>
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <small>📅 {{ post.date | date: "%B %d, %Y" }}</small>
+        <p>{{ post.excerpt }}</p>
+        <hr />
+      </article>
+    {% endfor %}
+  </main>
+
+  <footer>
+    <p>© {{ site.time | date: "%Y" }} {{ site.author.name }}</p>
+  </footer>
+</body>
+</html>
+

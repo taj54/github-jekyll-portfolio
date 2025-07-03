@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  jekyll:
+    image: jekyll/jekyll:4.2.2
+    ports:
+      - "4000:4000"                  # Exposes Jekyll server on localhost:4000
+    volumes:
+      - .:/srv/jekyll:cached         # Mounts current folder into container
+    working_dir: /srv/jekyll         # Sets working directory inside container
+    environment:
+      - JEKYLL_ENV=development       # Enables dev mode (drafts, live reload)
+    command: >
+      sh -c "bundle install &&
+             bundle exec jekyll serve --watch --force_polling --drafts --host 0.0.0.0"

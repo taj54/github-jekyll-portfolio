@@ -1,0 +1,42 @@
+title: # Your Name
+description: # A short tagline or role, e.g. "Full Stack Developer Portfolio"
+theme: jekyll-theme-minimal # Choose a GitHub-supported theme or custom one
+
+# Optional: GitHub Pages base settings
+url: "https://your-username.github.io"  # Replace with your GitHub Pages URL
+baseurl: ""                             # Leave empty for user/organization pages
+
+# Layout defaults for specific folders
+defaults:
+  - scope:
+      path: "your-section-folder"       # e.g., "vsc_extension"
+    values:
+      layout: "custom-layout-name"      # e.g., "extension"
+
+# Markdown parser
+markdown: kramdown
+
+# Plugins (optional — supported by GitHub Pages)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude development-related files from site build
+exclude:
+  - Dockerfile
+  - docker-compose.yml
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .gitignore
+  - .github
+
+# Author metadata (used in SEO and layout templates)
+author:
+  name: # Your Name
+  email: # you@example.com
+  github: # your-github-username
+  linkedin: # your-linkedin-username
+
+# Optional social preview image
+# image: /assets/images/your-preview.jpg
