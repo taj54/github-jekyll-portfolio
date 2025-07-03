@@ -1,8 +1,10 @@
 # Use an official Ruby base image
 FROM ruby:3.1
 
-# Environment setup
+# Environment setup with UTF-8 locale
 ENV LANG=C.UTF-8 \
+    LANGUAGE=C.UTF-8 \
+    LC_ALL=C.UTF-8 \
     BUNDLER_VERSION=2.4.22
 
 # Set working directory
