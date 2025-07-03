@@ -1,15 +1,14 @@
 ﻿---
-title: Full Stack Developer Portfolio
+title: Home
 layout: default
 ---
-
-<div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+<div style="display: flex; align-items: center; justify-content: space-between;">
   <div>
-    <h1>👋 Hi, I'm [Your Name]</h1>
-    <p><strong>Full Stack Developer | [X]+ Years of Experience</strong></p>
-    <p>I craft high-performance web applications that balance beautiful design with solid engineering.</p>
+    <h1>👋 Hi, I'm {{ site.author.name }}</h1>
+    <p><strong>Full Stack Developer | 4.2 Years of Experience</strong></p>
+    <p>I craft high-performance web applications with a balance of beautiful design and solid engineering.</p>
   </div>
-  <img src="assets/img/profile.jpg" alt="[Your Name]" width="140" style="border-radius: 50%; margin-top: 10px;" />
+  <img src="assets/img/profile.jpg" alt="{{ site.author.name }}" width="140" style="border-radius: 40%; margin-left: 20px;" />
 </div>
 
 ---
@@ -22,6 +21,4 @@ layout: default
 {% include languages.md %}
 {% include contact.md %}
 
----
-
-  <p>© {{ site.time | date: "%Y" }} {{ site.author.name }}  All rights reserved</p>
+© 2025  {{ site.author.name }}. All rights reserved.
