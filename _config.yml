@@ -1,42 +1,32 @@
-title: Tajul Islam
-description: Full Stack Developer Portfolio
-theme: jekyll-theme-minimal
+title: Home
+description:  A short tagline or role, e.g. "Full Stack Developer Portfolio"
+theme: jekyll-theme-minimal # Choose a GitHub-supported theme or custom one
 
-# Optional base settings
-url: "https://taj54.github.io" 
-baseurl: ""                            # Leave empty for user/organization pages
+# Optional: GitHub Pages base settings
+url: "https://your-username.github.io"  # Replace with your GitHub Pages URL
+baseurl: ""                             # Leave empty for user/organization pages
 
 permalink: /blog/:title/
-
-# Permalinks for specific pages
-# Ensure index.md is processed as index.html
-- scope:
-    path: "index.md"
-  values:
-    permalink: /index.html
 
 paginate: 5         # number of posts per page
 paginate_path: "/blog/page:num"
 
-# Scope default layout for specific folder
+# Layout defaults for specific folders
 defaults:
   - scope:
-      path: "vsc_extension"
+      path: "your-section-folder"       # e.g., "vsc_extension"
     values:
-      layout: extension
+      layout: "custom-layout-name"      # e.g., "extension"
 
 # Markdown parser
 markdown: kramdown
 
-# Plugins (optional, GitHub supports these natively)
+# Plugins (optional — supported by GitHub Pages)
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-paginate
 
-
-
-# Exclude dev files from build
+# Exclude development-related files from site build
 exclude:
   - Dockerfile
   - docker-compose.yml
@@ -46,9 +36,12 @@ exclude:
   - .gitignore
   - .github
 
-# Author metadata (optional)
+# Author metadata (used in SEO and layout templates)
 author:
-  name: Taj
-  email: tajulislamj200@gmail.com
-  github: taj54
-  linkedin: tajulislam-j
+  name: Your Name
+  email: you@example.com
+  github: your-github-username
+  linkedin: your-linkedin-username
+
+# Optional social preview image
+# image: /assets/images/your-preview.jpg
