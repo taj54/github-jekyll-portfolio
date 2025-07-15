@@ -1,5 +1,7 @@
 title: Tajul Islam
 description: Full Stack Developer Portfolio
+theme: jekyll-theme-minimal
+
 # Optional base settings
 url: "https://taj54.github.io" 
 baseurl: ""                            # Leave empty for user/organization pages
@@ -24,7 +26,6 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-paginate
-  - jekyll-theme-minimal
 
 
 
