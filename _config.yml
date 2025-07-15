@@ -8,6 +8,13 @@ baseurl: ""                            # Leave empty for user/organization pages
 
 permalink: /blog/:title/
 
+# Permalinks for specific pages
+# Ensure index.md is processed as index.html
+- scope:
+    path: "index.md"
+  values:
+    permalink: /index.html
+
 paginate: 5         # number of posts per page
 paginate_path: "/blog/page:num"
 
